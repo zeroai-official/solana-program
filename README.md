@@ -18,12 +18,12 @@ Before getting started, ensure your local environment is set up with the followi
 ### 1. Clone the Repository
 Start by cloning the repository to your local machine:
 ```bash
-git clone https://github.com/zeroai-official/zeroai-program.git
+git clone https://github.com/zeroai-official/solana-program.git
 ```
 ### 2. Navigate to the Project Directory
 After cloning the repository, move into the project directory:
 ```bash
-cd zeroai-program
+cd solana-program
 ```
 
 ### 3. Generate the Program Key
