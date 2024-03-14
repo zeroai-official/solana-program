@@ -14,7 +14,7 @@ zeroai_program = "FDkZRiRJapBGTmcr9u8dQtHEk9VbDsb4E9dY4NYPLkJ3"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "devnet"
+cluster = "localnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

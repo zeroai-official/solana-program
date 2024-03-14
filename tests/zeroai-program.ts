@@ -37,11 +37,11 @@ const userWallet = anchor.workspace.ZeroaiProgram.provider.wallet;
  * For production deployments, it's crucial to use a secure keypair management solution
  * and never store private keys in plaintext or commit them to version control.
  */
-const secretKey = new Uint8Array(JSON.parse(process.env.VAULT_KEY || ''));
-const vault = Keypair.fromSecretKey(secretKey);
+// const secretKey = new Uint8Array(JSON.parse(process.env.VAULT_KEY || ''));
+// const vault = Keypair.fromSecretKey(secretKey);
 
 /* Uncomment the line below to generate a new keypair for development/testing */
-// const vault = anchor.web3.Keypair.generate();
+const vault = anchor.web3.Keypair.generate();
 
 /**
  * Retrieves the Program Derived Address (PDA) for the "games" account.
