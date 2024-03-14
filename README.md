@@ -122,7 +122,9 @@ cluster = "devnet"
 anchor deploy --program-keypair program_address.json --program-name zeroai-program
 ```
 After deployment, you can view your program on Solana Explorer:
-https://explorer.solana.com/address/{your program id}?cluster=devnet
+```bash
+https://explorer.solana.com/address/[your program id]?cluster=devnet
+```
 
 ### 5. Run
 ```bash
