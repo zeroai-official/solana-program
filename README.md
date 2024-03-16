@@ -18,12 +18,12 @@ Before getting started, ensure your local environment is set up with the followi
 ### 1. Clone the Repository
 Start by cloning the repository to your local machine:
 ```bash
-git clone https://github.com/zeroai-official/solana-program.git
+git clone https://github.com/zeroai-official/zeroai-solana.git
 ```
 ### 2. Navigate to the Project Directory
 After cloning the repository, move into the project directory:
 ```bash
-cd solana-program
+cd zeroai-solana
 ```
 
 ### 3. Generate the Program Key
@@ -122,6 +122,7 @@ cluster = "devnet"
 anchor deploy --program-keypair program_address.json --program-name zeroai-program
 ```
 After deployment, you can view your program on Solana Explorer:
+[Example](https://explorer.solana.com/address/FDkZRiRJapBGTmcr9u8dQtHEk9VbDsb4E9dY4NYPLkJ3/security?cluster=devnet)
 ```bash
 https://explorer.solana.com/address/[your program id]?cluster=devnet
 ```

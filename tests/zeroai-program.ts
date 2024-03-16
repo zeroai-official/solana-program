@@ -4,6 +4,7 @@ import { Keypair } from "@solana/web3.js";
 import { config } from 'dotenv';
 import { expect } from "chai";
 import BN from "bn.js";
+import * as bs58 from 'bs58';
 import { ZeroaiProgram } from "../target/types/zeroai_program";
 
 
@@ -37,8 +38,7 @@ const userWallet = anchor.workspace.ZeroaiProgram.provider.wallet;
  * For production deployments, it's crucial to use a secure keypair management solution
  * and never store private keys in plaintext or commit them to version control.
  */
-// const secretKey = new Uint8Array(JSON.parse(process.env.VAULT_KEY || ''));
-// const vault = Keypair.fromSecretKey(secretKey);
+// const vault = Keypair.fromSecretKey(bs58.decode(process.env.VAULT));
 
 /* Uncomment the line below to generate a new keypair for development/testing */
 const vault = anchor.web3.Keypair.generate();
@@ -120,7 +120,7 @@ describe("initGames", () => {
     }
   });
 });
-describe("addGames", () => {
+describe.only("addGames", () => {
   // Add Game to the Games account
   it("Add Game!", async () => {
     let symbol = ["BTC", "ETH", "SOL", "BNB", "DOGE", "JUP"];
